@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --rose-800: #7A284E;
+    --rose-50: #FFF7FB;
+    --stone-900: #312E2C;
+    --stone-600: #5F564D;
+    --stone-150: #E3DDD7;
+    --stone-100: #F3E5D7;
+    --brown-800: #854632;
+    --white: #fff;  
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: var(--stone-100);
+    line-height: 1.5;
+}
+
+.global-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 736px;
+    width: 100%;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 24px;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* layout */
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+}
+
+
+.recipe-header,
+.recipe-ingredients,
+.recipe-preparation,
+.recipe-instructions,
+.recipe-nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.recipe-preparation {
+    gap: 16px;
+    padding: 24px;
+    background-color: var(--rose-50);
+    border-radius: 12px;
+}
+
+/* Text */
+.recipe-title {
+    width: 100%;
+    color: var(--stone-900);
+    font-size: 40px;
+    font-family: 'Young Serif', Arial, Helvetica, serif;
+    line-height: 1.5;
+}
+
+.title {
+    width: 100%;
+    color: var(--brown-800);
+    font-size: 28px;
+    font-family: 'Young Serif', Arial, Helvetica, serif;
+    line-height: 1.5;
+}
+
+.preparation-title {
+    width: 100%;
+    color: var(--rose-800);
+    font-size: 20px;
+    font-family: 'Outfit', Arial, Helvetica, serif;
+    line-height: 1.5;
+}
+
+.description {
+    line-height: 1.5;
+    color: var(--stone-600);
+}
+
+.title,
+.preparation-title {
+  margin-bottom: 0;
+}
+
+.list {
+  margin-top: 0;
+  list-style-position: inside;
+  padding-left: 0;
+  gap: 8px;
+}
+
+/* list style */
+li::marker {
+   color: var(--brown-800);
+}
+
+/* table */
+.nutrition-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  table-layout: fixed;
+}
+
+.nutrition-table tr {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition-table tr:last-child{
+    border-bottom: none;
+}
+
+.nutrition-table tr:last-child td {
+    padding-bottom: 0;
+}
+
+.nutrition-table td {
+  padding: 10px 32px;
+}
+
+.nutrition-table td:last-child {
+  font-weight: 700;
+  padding-left: 16px;
+  color: var(--brown-800);
+}
+
+/* other */
+hr {
+  border: none;                          /* 先清除預設樣式 */
+  border-top: 1px solid var(--stone-150); /* 自訂上邊線 */                      /* 可選：上下留白 */
+}
+:root {
+    --rose-800: #7A284E;
+    --rose-50: #FFF7FB;
+    --stone-900: #312E2C;
+    --stone-600: #5F564D;
+    --stone-150: #E3DDD7;
+    --stone-100: #F3E5D7;
+    --brown-800: #854632;
+    --white: #fff;  
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: var(--stone-100);
+}
+
+.global-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 736px;
+    width: 100%;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 24px;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* layout */
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+}
+
+
+.recipe-header,
+.recipe-ingredients,
+.recipe-preparation,
+.recipe-instructions,
+.recipe-nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.recipe-preparation {
+    gap: 16px;
+    padding: 24px;
+    background-color: var(--rose-50);
+    border-radius: 12px;
+}
+
+/* Text */
+.recipe-title {
+    width: 100%;
+    color: var(--stone-900);
+    font-size: 40px;
+    font-family: 'Young Serif', Arial, Helvetica, serif;
+    line-height: 100%;
+}
+
+.title {
+    width: 100%;
+    color: var(--brown-800);
+    font-size: 28px;
+    font-family: 'Young Serif', Arial, Helvetica, serif;
+    line-height: 100%;
+}
+
+.preparation-title {
+    width: 100%;
+    color: var(--rose-800);
+    font-size: 20px;
+    font-family: 'Outfit', Arial, Helvetica, serif;
+    line-height: 100%;
+}
+
+.description {
+    line-height: 1.5;
+    color: var(--stone-600);
+}
+
+
+/* list style */
+li::marker {
+   color: var(--brown-800);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 8px;
+    list-style-position: inside; 
+}
+
+/* table */
+.nutrition-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  table-layout: fixed;
+}
+
+.nutrition-table tr {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition-table tr:last-child{
+    border-bottom: none;
+}
+
+.nutrition-table tr:last-child td {
+    padding-bottom: 0;
+}
+
+.nutrition-table td {
+  padding: 8px 32px;
+}
+
+.nutrition-table td:last-child {
+  font-weight: 700;
+  padding-left: 16px;
+  color: var(--brown-800);
+}
+
+/* other */
+hr {
+  border: none;                          /* 先清除預設樣式 */
+  border-top: 1px solid var(--stone-150); /* 自訂上邊線 */                      /* 可選：上下留白 */
+}
+

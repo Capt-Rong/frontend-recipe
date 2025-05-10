@@ -1,0 +1,37 @@
+/* RWD */
+.wrapper {
+  max-width: 736px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+  .recipe-card {
+    max-width: 616px;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 375px) {
+  .recipe-card {
+    width: 100%;            /* 滿版寬度 */
+    min-width: 100vw;
+    margin: 0;               /* 移除內外距 */
+    border-radius: 0;        /* 移除圓角 */
+    padding: 0;      /* 或設為 0；這裡視覺上更舒適 */
+}
+  .recipe-title {
+    font-size: 36px;
+  }
+
+  .card-content {
+    padding: 40px 32px;
+  }
+
+  .recipe-image {
+    border-radius: 0;
+  }
+}
