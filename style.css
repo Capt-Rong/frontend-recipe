@@ -280,13 +280,13 @@ li::marker {
 /* table */
 .nutrition-table {
   width: 100%;
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0 8px;
   table-layout: fixed;
 }
 
 .nutrition-table tr {
-  border-bottom: 1px solid var(--stone-150);
+    border-bottom: 1px solid var(--stone-150);
 }
 
 .nutrition-table tr:last-child{
